@@ -25,6 +25,20 @@ class TestMyBotsTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testModel() {
+        let model = AFModel.sharedModel
+        let jake = model.addPerson("Jake", age: 25)
+        XCTAssertEqual(model.people.count, 1)
+        
+        let peopleCount = model.people.count
+        model.removePerson(jake)
+        
+        XCTAssertEqual(model.people.count, peopleCount - 1)
+        
+        
+        
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {

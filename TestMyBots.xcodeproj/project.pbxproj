@@ -15,6 +15,8 @@
 		497038D21B7E241200577FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497038D01B7E241200577FE0 /* LaunchScreen.storyboard */; };
 		497038DD1B7E241200577FE0 /* TestMyBotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497038DC1B7E241200577FE0 /* TestMyBotsTests.swift */; };
 		497038E81B7E241200577FE0 /* TestMyBotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497038E71B7E241200577FE0 /* TestMyBotsUITests.swift */; };
+		49E40F321B7E26E30093390F /* AFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E40F311B7E26E30093390F /* AFModel.swift */; };
+		49E40F331B7E299A0093390F /* AFModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E40F311B7E26E30093390F /* AFModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		497038E31B7E241200577FE0 /* TestMyBotsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMyBotsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		497038E71B7E241200577FE0 /* TestMyBotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMyBotsUITests.swift; sourceTree = "<group>"; };
 		497038E91B7E241200577FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E40F311B7E26E30093390F /* AFModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 			children = (
 				497038C41B7E241200577FE0 /* AppDelegate.swift */,
 				497038C61B7E241200577FE0 /* ViewController.swift */,
+				49E40F311B7E26E30093390F /* AFModel.swift */,
 				497038C81B7E241200577FE0 /* Main.storyboard */,
 				497038CE1B7E241200577FE0 /* Assets.xcassets */,
 				497038D01B7E241200577FE0 /* LaunchScreen.storyboard */,
@@ -258,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E40F321B7E26E30093390F /* AFModel.swift in Sources */,
 				497038C71B7E241200577FE0 /* ViewController.swift in Sources */,
 				497038CD1B7E241200577FE0 /* TestMyBots.xcdatamodeld in Sources */,
 				497038C51B7E241200577FE0 /* AppDelegate.swift in Sources */,
@@ -268,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E40F331B7E299A0093390F /* AFModel.swift in Sources */,
 				497038DD1B7E241200577FE0 /* TestMyBotsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +493,7 @@
 				497038EE1B7E241200577FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		497038EF1B7E241200577FE0 /* Build configuration list for PBXNativeTarget "TestMyBotsTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +502,7 @@
 				497038F11B7E241200577FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		497038F21B7E241200577FE0 /* Build configuration list for PBXNativeTarget "TestMyBotsUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +511,7 @@
 				497038F41B7E241200577FE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
