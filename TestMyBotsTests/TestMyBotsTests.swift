@@ -33,9 +33,10 @@ class TestMyBotsTests: XCTestCase {
         let peopleCount = model.people.count
         model.removePerson(jake)
         
-        XCTAssertEqual(model.people.count, peopleCount - 1)
+        XCTAssertLessThan(model.people.count, peopleCount)
         
-        
+        let tyra = model.addPerson("Tyra", age: 24)
+        XCTAssertEqual(tyra.name, "Tyra")
         
     }
     
