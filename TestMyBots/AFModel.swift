@@ -46,6 +46,24 @@ class AFModel {
             }
         }
     }
+    
+    func foobar(value: Int) -> String {
+        var aString = ""
+        
+        if value % 3 == 0 {
+            aString = "foo"
+        }
+        
+        if value % 5 == 0 {
+            aString += "bar"
+        }
+        
+        if aString.isEmpty {
+            aString = "\(value)"
+        }
+        
+        return aString
+    }
 }
 
 

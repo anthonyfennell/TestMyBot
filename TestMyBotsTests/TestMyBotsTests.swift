@@ -20,11 +20,6 @@ class TestMyBotsTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
     func testModel() {
         let model = AFModel.sharedModel
         let jake = model.addPerson("Jake", age: 25)
@@ -38,13 +33,25 @@ class TestMyBotsTests: XCTestCase {
         let tyra = model.addPerson("Tyra", age: 24)
         XCTAssertEqual(tyra.name, "Tyra")
         
+        let age = tyra.age
+        tyra.birthday()
+        XCTAssertLessThan(age, tyra.age)
+        
+        
+        
+        XCTAssertEqual(model.foobar(1), "1")
+        XCTAssertEqual(model.foobar(7), "7")
+        XCTAssertEqual(model.foobar(3), "foo")
+        XCTAssertEqual(model.foobar(5), "bar")
+        XCTAssertEqual(model.foobar(15), "foobar")
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testPerformanceExample() {
+//        // This is an example of a performance test case.
+//        self.measureBlock() {
+//            // Put the code you want to measure the time of here.
+//        }
+//    }
     
 }
